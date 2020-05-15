@@ -24,7 +24,8 @@ body {
 .fab {
   font-size: 30px;
   padding-left: 5px;
-  padding-right: 20px;
+	padding-right: 20px;
+	color: rgb(233, 79, 105);
 }
 
 .navbar-brand {
@@ -41,7 +42,7 @@ body {
   line-height: 15px;
 }
 
-/***** language dropdown *****/
+/***** language dropdown selection *****/
 .dropdown {
   position: relative;
   display: inline-block;
@@ -53,6 +54,7 @@ body {
   background-color: #FCFCFC;
   z-index: 1;
 	margin: 0 auto;
+	margin-left: 7px;
 }
 .dropdown-content a {
   color: black;
@@ -61,7 +63,7 @@ body {
   display: block;
 }
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: rgb(224, 241, 248);
 }
 .dropdown:hover .dropdown-content {
   display: block;
@@ -84,8 +86,6 @@ hr {
   margin-left: auto;
 	margin-right: auto;
 	padding-top: 80px;
-	padding-left: 50px;
-	padding-right: 50px;
   max-width: 1300px;
 }
 
@@ -95,53 +95,49 @@ hr {
 }
 
 .flex {
-
+ /*empty*/
 }
 
 .featured-content {
-  margin: 0 auto;
   margin-left: 0rem;
   margin-right: 0rem;
-  padding-top: 5rem;
-  padding-right: 0px;
+	padding-right: 0;
+	width: 90%;
 }
 .featured-image {
-  margin-top: 0;
-	margin-left: 0px;
-  margin-right: 0px;
-  margin-bottom: 0;
+  margin: 0;
+	width: 90%;
 }
 
 #feat-img {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 35rem;
   border-radius: 5px;
   transform: scale(1);
-  margin-left: 0px;
+	margin-left: 0px;
 }
 
 .featured-blurb {
   float: right;
-  padding-top: 8%;
-	margin: 0 auto;
-	padding-left: auto;
-  padding-right: auto;
+	margin-left: -3rem;
+	padding-top: 10%;
+	padding-left: 0;
+	padding-right: 0;
 	width: 100%;
 }
 
 h2 {
-  font-size: 29px;
-  font-weight: bold;
+  font-size: 1.80rem;
+  font-weight: 900;
   line-height: 1.5;
 }
 
 .featured-words {
-  font-size: 15px;
+  font-size: 1.15rem;
   font-weight: 400;
   text-align: left;
-  padding-top: 10px;
-  padding-right: 5px;
-  line-height: 1.5;
+  padding: 10px 5px 10px 0px;
+	line-height: 1.5;
 }
 .featured-title a {
   color: black;
@@ -149,14 +145,15 @@ h2 {
 
 .article-date {
   font-size: 14px;
-  font-weight: bolder;
+  font-weight: bold;
   line-height: 2;
 }
-.article-tag-links a {
-  color: #6981f5;
+a.article-tag-links {
+	color: #6981f5;
 }
-.article-tag-links a:hover {
-  color: yellow;
+a.article-tag-links:hover {
+	text-decoration: none;
+	color: darkcyan;
 }
 
 .below-main-hr {
@@ -215,7 +212,7 @@ h2 {
 }
 
 .sub-hero-title {
-	font-size: 25px;
+	font-size: 1.25rem;
 	padding-left: 0px;
 	padding-right: 0px;
 	padding-bottom: 2rem;
@@ -225,7 +222,7 @@ h2 {
 
 .sub-hero-pill-links {
 	color: black;
-	padding-right: 20px;
+	padding-right: 2rem;
 	font-weight: bold;
 }
 
@@ -238,7 +235,7 @@ h2 {
 }
 
 .sub-hero .all {
-	border-bottom: 3px solid black;
+	border-bottom: 3px solid#6981f5;
 	margin-left: 0px;
 	padding-left: 0px;
 	padding-bottom: 2px;
@@ -260,6 +257,7 @@ h2 {
 
 .sub-hero img {
 	border-radius: 5px;
+	width: 90%;
 }
 
 .sub-hero h3 {
@@ -446,22 +444,21 @@ button:hover {
 
 
 @media (min-width: 992px) {
-
+	/*empty*/
 }
-
 
 @media (min-width: 768px) {
   .navbar-expand-xl .navbar-nav .nav-link {
-    padding: 0 1rem;
+    /*empty*/
   }
   .nav-item.nav-link {
     padding-right: 10px;
   }
   .featured-content {
-    margin: auto;
+		/*empty*/
   }
   .feature-image {
-    width: ;
+    /*empty*/
   }
   #feat-img {
     width: 100%;
@@ -490,5 +487,4 @@ button:hover {
 
 }
 
-
-/* extra space to scroll */
+/* end of stylesheet */
