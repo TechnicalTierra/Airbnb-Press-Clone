@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
@@ -15,31 +16,34 @@
     <script src="https://kit.fontawesome.com/02ea88b81a.js"></script>
 
     <title>Airbnb Newsroom</title>
-
   </head>
-  <body>
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-xl py-0 my-0.5">
-      <!-- nav for xl screens -->
-      <div class="d-none d-xl-flex flex-grow-1" id="xlNavbar">
-        <a href="#"><i class="fab fa-airbnb"></i></a>
 
-        <a class="navbar-toggler navbar-brand" role="button" data-toggle="collapse" href="#navbarMenu" id="navbarMenuToggler"><i class="fab fa-airbnb"></i></a>
-        <div class="collapse navbar-collapse" id="navbarMenu"><!-- button and collasped menu -->
-          <a class="nav-item nav-link" href="#">Home</a>
-          <hr/>
-          <a class="nav-item nav-link" href="#">Invite friends</a>
+  <body>
+    <nav class="navbar navbar-expand-md py-0 my-0.5">
+      <!-- logo and branding -->
+      <div class="d-none d-lg-flex flex-grow-1" id="xlNavbar">
+
+        <a href="#"><i class="fab fa-airbnb"></i></a>
+        <a class="navbar-brand" href="#">Airbnb Newsroom</a>
+
+        <!-- mobile/tablet toggle hamburger menu -->
+        <button class="navbar-toggler" data-toggle="collapse" id="navbarMenuToggler">
+          <i class="fas fa-bars"></i>
+        </button>
+        
+        <!-- collasped menu -->
+        <div class="collapse navbar-collapse" id="toggleNavbarMenu">
+          <a class="nav-item nav-link" id="search-icon" href="#"><i class="fas fa-search"></i></a>
+          <input type="text" placeholder="">
+          
+          <input type="" placeholder="">
+          <a class="nav-item nav-link" href="#">About Us</a>
+          <a class="nav-item nav-link" href="#">Fast Facts</a>
           <a class="nav-item nav-link" href="#">Refer hosts</a>
           <a class="nav-item nav-link" href="#">Airbnb for work</a>
-          <hr/>
-          <a class="nav-item nav-link" href="#">Host a home<br/><small>Earn up to <b>$12,319 HKD a month</b></small></a>
-          <a class="nav-item nav-link" href="#">Host an experience</a>
-          <a class="nav-item nav-link" href="#">Sign up</a>
-          <a class="nav-item nav-link" href="#">Log in</a>
-          <hr/>
-          <a class="nav-item nav-link" href="#">Help</a>
         </div>
-        <a class="navbar-brand" href="#">Airbnb Newsroom</a>
+        
+        <!-- desktop and larger navigation bar -->
         <div class="navbar-nav ml-auto">
           <a class="nav-item nav-link" href="#">About Us</a>
           <a class="nav-item nav-link" href="#">Fast Facts</a>
@@ -59,24 +63,26 @@
         </div>
       </div>
     </nav>
+
+    <!-- horizontal line -->
     <hr>
 
 
-    <!-- Main content / technically 1st row -->
+    <!-- Main/featured content / technically 1st row -->
     <div class="main">
       <div class="container-fluid main-container-fluid">
         <div class="wrapper flex">
           <div class="row row-one">
-            <div class="col-lg-9 col-md col-sm featured-content">
+            <div class="col-lg-9 col-md-9 col-sm-12 featured-content">
               <div class="featured-image">
                 <img id="feat-img" src="images/joy-real-canada-pride-unsplash.jpg" alt="Photo of Canadian Prime Minister Justin Trudeau waving at Pride Parade by Joy Real from Unsplash">
               </div>
             </div>
 
-            <div class="col-lg-3 featured-blurb">
+            <div class="col-lg-3 col-md-3 col-sm-12 featured-blurb">
               <h2 class="featured-title"><a href="#">Canada Celebrates Airbnb Partnership During Pride</a></h2>
               <p class="featured-words">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <p><span class="article-date">March 13, 2019 |</span> <a href="#" class="article-tag-links">Community</a>, <a href="#" class="article-tag-links">Company</a></p>
+              <p><span class="article-date">June 13, 2019 |</span> <a href="#" class="article-tag-links">Community</a>, <a href="#" class="article-tag-links">Company</a></p>
             </div>
           </div>
 
@@ -110,11 +116,11 @@
               </div>
             </div>
           </div>
+
           <hr class="below-hero-hr">
 
-
-          <!-- sub hero / 3rd row / 3 columns -->
-          <div class="row row-three sub-hero d-flex justify-content-between">
+          <!-- sub hero / pill links -->
+          <div class="row row-three sub-hero">
             <div class="col-lg-12 sub-hero-title">
               <ul class="nav nav-pills sub-hero-pills">
                 <li class="active"><a href="#" class="sub-hero-pill-links"><span class="all">All</span></a></li>
@@ -126,7 +132,11 @@
                 <li><a href="#" class="sub-hero-pill-links">Nature</a></li>
               </ul>
             </div>
-            <div class="col-lg-4 sub-hero article-group-one">
+          </div>
+
+          <!-- 2nd sub hero / 3rd row / 3 columns -->
+          <div class="row row-four second-hero d-flex justify-content-between">
+            <div class="col-lg-4 second-sub-hero article-group-one">
               <div class="article-group">
                 <img src="images/ramon-salinero-orb-unsplash1.jpg" alt="A photo of human hand holding plasma ball by Ramon Salinero on Unsplash" class="img-responsive">
                 <div class="">
@@ -136,7 +146,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 sub-hero article-group-one">
+            <div class="col-lg-4 second-sub-hero article-group-one">
               <div class="article-group">
                 <img src="images/nsey-benajah-mermaid-unsplash1.jpg" alt="Photo of a woman under water by Nsey Benajah on Unsplash" class="img-responsive">
                 <div class="">
@@ -146,7 +156,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 sub-hero article-group-one">
+            <div class="col-lg-4 second-sub-hero article-group-one">
               <div class="article-group">
                 <img src="images/franck-v-robot-unsplash1.jpg" alt="Photo of white robot action toy by Frank V on Unsplash" class="img-responsive">
                 <div class="">
@@ -158,9 +168,9 @@
             </div>
           </div>
 
-          <!-- 2nd sub hero row / 4th row / 3 columns-->
-          <div class="row row-four sub-sub-hero">
-            <div class="col-lg-4 article-group-two">
+          <!-- third sub hero row / 4th row / 3 columns-->
+          <div class="row row-five second-hero d-flex justify-content-between">
+            <div class="col-lg-4 second-sub-hero article-group-one">
               <div class="article-group">
                 <img src="images/denise-chan-flowers-unsplash.jpg" alt="Photo of assorted-color petaled flowers by Photo by Denise Chan on Unsplash" class="img-responsive">
                 <div class="">
@@ -170,7 +180,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 article-group-two">
+            <div class="col-lg-4 second-sub-hero article-group-one">
               <div class="article-group">
                 <img src="images/caitlin-wynne-mountains-unsplash.jpg" alt="Photo by Caitlin Wynne on Unsplash" class="img-responsive">
                 <div class="">
@@ -180,7 +190,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-4 article-group-two">
+            <div class="col-lg-4 second-sub-hero article-group-one">
               <div class="article-group">
                 <img src="images/belinda-fewings-smiley-face-unsplash.jpg" alt="Photo of shallow focus photography of yellow emoji by Belinda Fewings from Unsplash" class="img-responsive">
                 <div class="">
@@ -189,13 +199,12 @@
                   <p><span class="article-date">July 5, 2019 | </span><a href="#" class="article-tag-links">Research</a></p>
                 </div>
               </div>
-              <div class="article-group">
-              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+
       <!-- button -->
       <div class="col-lg-12 button-div button">
         <button type="button" class="">More</button>
@@ -241,7 +250,9 @@
               <p>Lorem ipsum dolor sit amet, adipiscing elit. Nam metus ligula, lobortis in risus nec, finibus feugiat quam. Donec vitae velit non quam imperdiet tempus. Sed mattis mollis nibh eu semper. Phasellus eleifend sit amet magna et ultrices. Sed nec orci fermentum.</p>
             </div>
           </div>
-          <hr>
+
+          <!--horizontal line -->
+          <hr class="below-footer-hr">
 
             <!-- sub footer -->
             <div class="row sub-footer wrapper">
@@ -251,6 +262,7 @@
                   <span>&copy; Airbnb, Inc.</span>
                 </div>
                 <div class="navbar-nav ml-auto">
+                  <a href="#" class="privacy">Cookie Preferences</a>
                   <a href="#" class="privacy">Terms & Privacy</a>
                   <a href="#" class="icons"><i class="fab fa-facebook-f"></i></a>
                   <a href="#" class="icons"><i class="fab fa-twitter"></i></a>
