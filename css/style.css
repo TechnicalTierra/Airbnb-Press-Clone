@@ -8,15 +8,12 @@ body {
 
 /*************** ********** NAVBAR ********** ***************/
 
-#xlNavbar {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 .navbar a {
   color: black;
 }
 .navbar a:hover {
-  color: #6981f5;
+	text-decoration: none;
+	color: #6981f5;
 }
 .fab {
   font-size: 30px;
@@ -24,48 +21,21 @@ body {
 	padding-right: 20px;
 	color: rgb(233, 79, 105);
 }
-.navbar-brand {
-	line-height: 20px;
-	margin-right: 0;
+.navbar-nav {
+	color: black;
 }
-.nav-item.nav-link {
-  font-size: 17px;
-	line-height: 15px;
+.navbar-light .navbar-nav .nav-link {
+	color: black;
 }
-a.nav-item.nav-link {
-	padding-left: 5px;
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #6981f5;
 }
 
-/***** language dropdown selection *****/
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-.dropdown-content {
-  display: none;
-  position: absolute;
-  min-width: 100px;
-  background-color: #FCFCFC;
-  z-index: 1;
-	margin: 0 auto;
-	margin-left: 7px;
-}
-.dropdown-content a {
-  color: black;
-  padding: 15px 20px;
-  text-decoration: none;
-  display: block;
-}
-.dropdown-content a:hover {
-  background-color: rgb(224, 241, 248);
-}
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
+/********** **********/
 #search-icon {
   font-weight: 100;
 }
+
 /********** horizontal line **********/
 hr {
   margin: 1px 0px;
@@ -87,34 +57,33 @@ hr {
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 3rem;
+	padding-left: 1rem;
+	padding-right: 1rem;
 }
 
 .featured-content {
   margin-left: 0rem;
   margin-right: 0rem;
-	padding-right: 0;
-	width: 90%;
+	width: 100%;
 }
 .featured-image {
   margin: 0;
-	width: 90%;
 }
 
 #feat-img {
-  width: 100%;
-  height: 35rem;
+	width: 100%;
   border-radius: 5px;
   transform: scale(1);
 	margin-left: 0px;
 }
 
 .featured-blurb {
-  float: right;
-	margin-left: -3rem;
-	padding-top: 10%;
-	padding-left: 0;
-	padding-right: 0;
-	width: 100%;
+	margin-left: 0rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 h2 {
@@ -197,7 +166,7 @@ a.article-tag-links:hover {
 	margin: 0 auto;
 }
 
-.sub-hero .article-group {
+.sub-hero .sub-article-group {
 	margin: 0 auto;
 	width: 100%;
 }
@@ -216,8 +185,11 @@ a.article-tag-links:hover {
 	padding-right: 2rem;
 	font-weight: bold;
 }
+.sub-hero-pills {
+	display: inline-block;
+}
 
-.sub-hero-pills a:hover {
+.nav-pills a:hover {
 	text-decoration: none;
 }
 
@@ -237,8 +209,7 @@ a.article-tag-links:hover {
 .sub-hero .all a:hover {
 	color: black;
 }
-
-.sub-hero .article-group-one {
+.sub-hero .article-group-div {
 	margin-left: auto;
 	margin-right: auto;
 	padding-left: 0px;
@@ -279,17 +250,12 @@ a.article-tag-links:hover {
 
 /**************************** 2nd sub hero / row four *************************/
 .second-sub-hero {
-	margin: 0 auto;
+	margin: 0 auto 1rem;
 }
 
 .second-sub-hero .article {
   margin: 0 auto;
   width: 100%;
-}
-
-.article-group-two {
-  margin-right: -15px;
-  margin-left: -15px;
 }
 
 .second-sub-hero .article-group-two {
@@ -307,36 +273,36 @@ a.article-tag-links:hover {
 .second-sub-hero h3 {
 	font-weight: bold;
 	line-height: 1.5;
-	font-size: 20px;
+	font-size: 1.5rem;
 }
 .second-sub-hero p {
 	line-height: 1.5;
-  width: 95%;
-}
-.row-four {
-	padding-bottom: 3rem;
+	width: 95%;
+	font-size: 1.15rem;
 }
 .row-four .article-tag-links {
 	font-size: 14px;
 }
 
 /********** button **********/
-.button-div {
+.more-button-div {
 	margin: 5rem auto;
 	text-align: center;
 }
-button {
+.more-button {
 	margin-top: 4rem;
 	margin-left: auto;
 	margin-right :auto;
 	margin-bottom: 5rem;
-	padding: 25px 50px;
+	padding: 2.5rem 5rem;
 	color: white;
 	background-color: #6981f5;
 	border-radius: 5px;
-	box-shadow: 0px;
+	box-shadow: 0;
+	font-size: 1.5rem;
+	border: none;
 }
-button:hover {
+.more-button:hover {
 	background: #5e74dc;
 	cursor: pointer;
 }
@@ -390,7 +356,7 @@ button:hover {
 .sub-footer a:hover {
 	color: #6981f5;
 }
-.sub-footer .logo {
+.sub-footer .footer-logo {
 	margin-left: 0px;
 }
 .sub-footer .copyright {
@@ -416,67 +382,52 @@ a.privacy:hover {
 }
 
 
-/******************************* responsive **********************************/
-
-/********** TESTING TESTING TESTING mobile/tablet navigation **********/
-.navbar-toggler {
-	color: red;
-}
-/********** TESTING TESTING TESTING **************/
-
-
-
-@media (min-width: 1400px) {
-	.navbar-expand-md .navbar-nav .nav-link {
-		padding-right: 2.5rem;
-  }
-}
-
-
-@media (min-width: 1200px) {
-  .navbar-expand-md .navbar-nav .nav-link {
-		padding-right: 1.5rem;
-  }
-  .nav-item.nav-link {
-    padding-right: 10px;
-  }
-  hr {
-    text-align: center;
-	}
-	/* #toggleNavbarMenu {
-		display: none;
-	} */
-}
-
-
-@media (max-width: 1199px) {
-	/* makes desktop navbar disappear */
-	.navbar-expand-md .navbar-nav .nav-link {
-		display: none;
-	}
-}
-
+/******************************* media queries **********************************/
 
 @media (min-width: 992px) {
-  .nav-item.nav-link {
-    padding-right: 10px;
-  }
-  hr {
-    text-align: center;
+	.navbar-expand-lg .navbar-nav .nav-link {
+		padding-left: 1rem;
 	}
-  #toggleNavbarMenu {
-    display: none !important;
-  }
 }
 
 
-@media (min-width: 768px) {
-  /*placeholder*/
+@media (max-width: 889px) {
+	div.sub-hero-title {
+		white-space: nowrap;
+		overflow: auto;
+	}
 }
 
 
-@media (min-width: 360px) {
-	{
-		display: display;
+@media (max-width: 768px) {
+	
+	.first-hero-column {
+		margin-bottom: 2.5rem;
+	}
+	.below-oranges {
+		padding-bottom: 1.5rem;
+		border-bottom: rgba(192, 188, 188, 0.5) solid 2px;
+		border-width: thin;
+	}
+	.second-sub-hero {
+		margin-top: 0.75rem;
+	}
+	.sub-article-group {
+		padding-bottom: 1.5rem;
+		border-bottom: rgba(192, 188, 188, 0.5) solid 2px;
+		border-width: thin;
+	}
+	h3.footer-disclaimer-title {
+		font-size: 1.5rem;
+	}
+	.footer-info, .airbnb-copyright {
+		display: none;
+	}
+	h3.mobile-third-heading {
+		font-size: 1.75rem;
+		padding: 0.5rem 0;
+	}
+	.mobile-paragraph, p.mobile-paragraph, .article-date, .row-four .article-tag-links {
+		font-size: 1.5rem;
 	}
 }
