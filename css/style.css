@@ -1,0 +1,26 @@
+/***** css style sheet *****/
+
+body {
+	/* background-color: lightgray; */
+	background-image: url("assets/luca-bravo_lake-cabin-near-mountains_unsplash.jpg");
+}
+
+.fa-brands {
+	color: white;
+}
+nav {
+	color: white;
+}
+nav li {
+	padding-left: 1.5em;
+}
+.nav-item a:hover { 
+	color: white;
+}
+#login {
+	padding-right: 1.5em;
+}
+
+
+/***** media breakpoints *****/
+
